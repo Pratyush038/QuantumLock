@@ -156,7 +156,9 @@ def main():
         "Quantum Authentication System</h1>",
         unsafe_allow_html=True
     )
-
+    with st.expander("⚠️ Performance Warning:"):
+        st.markdown("""
+        This application uses multiple quantum computing libraries, including Qiskit and Qiskit Aer, which may require significant computational resources. Performance may vary depending on your system's CPU, available RAM, and whether your processor supports multi-threading. Running on lower-end machines may result in slower execution times, especially during quantum circuit simulations. For optimal performance, consider running this on a system with a high-performance CPU or enabling GPU acceleration where possible. """)
     with st.expander("How Quantum Authentication Works"):
         st.markdown("""
         This system uses quantum computing principles for secure authentication:
